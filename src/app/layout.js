@@ -1,24 +1,19 @@
 import "@/styles/globals.css";
-import { Geist, Geist_Mono, Playfair_Display, Playfair } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
+import { ThemeProvider } from "@/context/ThemeContext";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+// Body font - clean, modern sans-serif
+const inter = Inter({
+    variable: "--font-inter",
     subsets: ["latin"],
+    display: "swap",
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
-
-const playFair = Playfair({
-    variable: "--font-playFair",
-    subsets: ["latin"],
-});
-
+// Heading font - elegant serif
 const playFairDisplay = Playfair_Display({
-    variable: "--font-playFair-display",
+    variable: "--font-playfair",
     subsets: ["latin"],
+    display: "swap",
 });
 
 export const metadata = {
@@ -29,14 +24,33 @@ export const metadata = {
     description: "Logaa Smart Solutions",
 };
 
+// Script to prevent flash of wrong theme (runs before React hydration)
+const themeScript = `
+(function() {
+    try {
+        var theme = localStorage.getItem('theme');
+        var resolved = theme;
+        
+        if (!theme || theme === 'system') {
+            resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        
+        document.documentElement.setAttribute('data-theme', resolved);
+    } catch (e) {}
+})();
+`;
+
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+            </head>
             <body
-                className={`${playFair.variable} ${playFairDisplay.variable} antialiased`}
+                className={`${inter.variable} ${playFairDisplay.variable} antialiased`}
                 suppressHydrationWarning
             >
-                {children}
+                <ThemeProvider>{children}</ThemeProvider>
             </body>
         </html>
     );
