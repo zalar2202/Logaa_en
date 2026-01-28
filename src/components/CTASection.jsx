@@ -17,21 +17,21 @@ export default function CTASection() {
                     level up your digital presence, we're here to help.
                 </p>
                 <div className="cta-buttons">
-                    <a href="mailto:hello@loga.dev" className="loga-btn large">
+                    <a href="mailto:info@logaa.website" className="loga-btn large">
                         Start a Conversation
                     </a>
                 </div>
                 <div className="cta-contact-info">
                     <div className="contact-item">
                         <span className="contact-label">Email</span>
-                        <a href="mailto:hello@loga.dev" className="contact-value">
-                            hello@loga.dev
+                        <a href="mailto:info@logaa.website" className="contact-value">
+                            info@logaa.website
                         </a>
                     </div>
                     <div className="contact-item">
                         <span className="contact-label">Phone</span>
-                        <a href="tel:+989122613278" className="contact-value">
-                            +98 912 261 3278
+                        <a href="tel:+905510619856" className="contact-value">
+                            +90 551 061 9856
                         </a>
                     </div>
                 </div>
