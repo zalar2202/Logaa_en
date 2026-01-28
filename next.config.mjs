@@ -18,6 +18,21 @@ const nextConfig = {
     images: {
         formats: ['image/webp', 'image/avif'],
     },
+
+    // Override aggressive external caching
+    async headers() {
+        return [
+            {
+                source: '/:path*',
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'public, s-maxage=0, must-revalidate',
+                    },
+                ],
+            },
+        ];
+    },
 };
 
 export default nextConfig;
