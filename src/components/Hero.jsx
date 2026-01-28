@@ -1,6 +1,7 @@
 "use client";
 
 import ParticleBackground from "./ParticleBackground";
+import Link from "next/link";
 
 /**
  * Hero - Landing page hero section with particle background
@@ -12,13 +13,13 @@ export default function Hero() {
             <div className="hero-content animate-fade-in">
                 <h1 className="hero-title">LOGA</h1>
                 <div className="hero-tagline">
-                    <span className="animate-fade-in-up delay-100">Design</span>
+                    <Link href="/services/design" className="animate-fade-in-up delay-100 hover-link">Design</Link>
                     <span className="hero-dot">·</span>
-                    <span className="animate-fade-in-up delay-200">Develop</span>
+                    <Link href="/services/develop" className="animate-fade-in-up delay-200 hover-link">Develop</Link>
                     <span className="hero-dot">·</span>
-                    <span className="animate-fade-in-up delay-300">Deploy</span>
+                    <Link href="/services/deploy" className="animate-fade-in-up delay-300 hover-link">Deploy</Link>
                     <span className="hero-dot">·</span>
-                    <span className="animate-fade-in-up delay-400">Maintain</span>
+                    <Link href="/services/maintain" className="animate-fade-in-up delay-400 hover-link">Maintain</Link>
                 </div>
                 <p className="hero-description animate-fade-in-up delay-500">
                     Your end-to-end digital partner. We design, build, and grow your online presence

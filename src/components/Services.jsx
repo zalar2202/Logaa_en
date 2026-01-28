@@ -10,24 +10,28 @@ export default function Services() {
         {
             icon: <DesignIcon />,
             title: "Design",
+            href: "/services/design",
             description:
                 "Beautiful, intuitive interfaces that capture your brand essence and delight your users. From wireframes to polished UI, we craft experiences that stand out.",
         },
         {
             icon: <DevelopIcon />,
             title: "Develop",
+            href: "/services/develop",
             description:
                 "Clean, scalable code built with modern technologies. Whether it's a marketing site, web app, or custom platform, we build it right.",
         },
         {
             icon: <DeployIcon />,
             title: "Deploy",
+            href: "/services/deploy",
             description:
                 "Seamless launch with proper hosting, domain setup, and optimization. We handle the technical details so you can focus on your business.",
         },
         {
             icon: <MaintainIcon />,
             title: "Maintain",
+            href: "/services/maintain",
             description:
                 "Ongoing support, updates, and improvements to keep your digital presence running smoothly. We're with you for the long haul.",
         },
@@ -46,6 +50,7 @@ export default function Services() {
                         icon={service.icon}
                         title={service.title}
                         description={service.description}
+                        href={service.href}
                         delay={index * 100}
                     />
                 ))}

@@ -2,7 +2,13 @@
 const nextConfig = {
     // Generate unique build ID for each deployment
     generateBuildId: async () => {
-        return `build-${Date.now()}`;
+        const buildId = `build-${Date.now()}`;
+        console.log(`Setting build ID: ${buildId}`); // Log this so we can see it in Coolify
+        return buildId;
+    },
+
+    env: {
+        NEXT_PUBLIC_BUILD_ID: `v1.1.0-${new Date().toISOString()}`,
     },
 
     // Optimize output for Docker

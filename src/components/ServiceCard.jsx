@@ -2,11 +2,34 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
+import Link from "next/link";
+
 /**
  * ServiceCard - Individual service card with icon and description
  */
-export default function ServiceCard({ icon, title, description, delay = 0 }) {
+export default function ServiceCard({ icon, title, description, href, delay = 0 }) {
     const { ref, isVisible } = useScrollAnimation();
+
+    const CardContent = (
+        <>
+            <div className="service-icon">{icon}</div>
+            <h3 className="service-title">{title}</h3>
+            <p className="service-description">{description}</p>
+        </>
+    );
+
+    if (href) {
+        return (
+            <Link
+                href={href}
+                ref={ref}
+                className={`service-card loga-card service-card-link ${isVisible ? "visible" : ""}`}
+                style={{ transitionDelay: `${delay}ms`, textDecoration: 'none' }}
+            >
+                {CardContent}
+            </Link>
+        );
+    }
 
     return (
         <div
@@ -14,9 +37,7 @@ export default function ServiceCard({ icon, title, description, delay = 0 }) {
             className={`service-card loga-card ${isVisible ? "visible" : ""}`}
             style={{ transitionDelay: `${delay}ms` }}
         >
-            <div className="service-icon">{icon}</div>
-            <h3 className="service-title">{title}</h3>
-            <p className="service-description">{description}</p>
+            {CardContent}
         </div>
     );
 }
