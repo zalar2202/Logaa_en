@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+export const dynamic = 'force-dynamic';
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import Services from "@/components/Services";
