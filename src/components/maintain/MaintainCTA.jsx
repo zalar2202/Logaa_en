@@ -2,31 +2,28 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
-/**
- * DesignCTA - Final call-to-action section
- */
-export default function DesignCTA() {
+export default function MaintainCTA() {
     const { ref, isVisible } = useScrollAnimation();
 
     return (
         <section id="contact" className="section cta-section">
             <div ref={ref} className={`cta-content ${isVisible ? "visible" : ""}`}>
-                <h2 className="cta-title">Ready to Design Your Site?</h2>
+                <h2 className="cta-title">Sleep Soundly. We've Got Your Back.</h2>
                 <p className="cta-description">
-                    Let's talk about your goals and map out your digital presence. No commitment —
-                    just a conversation about what's possible.
+                    Join the businesses that trust Loga to protect and grow their online presence.
+                    Choose a plan or schedule a free site audit today.
                 </p>
                 <div className="cta-buttons">
                     <a
-                        href="mailto:info@logaa.website?subject=Design%20Project%20Inquiry"
+                        href="mailto:info@logaa.website?subject=Maintenance%20Plan%20Inquiry"
                         className="loga-btn large"
                     >
-                        Book a Discovery Call
+                        Choose a Maintenance Plan
                     </a>
                 </div>
                 <div className="cta-secondary">
                     <a href="mailto:info@logaa.website" className="loga-alt-btn">
-                        Send Project Details
+                        Get a Free Site Audit
                     </a>
                 </div>
                 <div className="cta-contact-info">
