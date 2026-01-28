@@ -5,6 +5,9 @@ const nextConfig = {
         return `build-${Date.now()}`;
     },
 
+    // Optimize output for Docker
+    output: 'standalone',
+
     // Disable x-powered-by header
     poweredByHeader: false,
 
