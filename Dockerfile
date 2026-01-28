@@ -6,12 +6,11 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json package-lock.json* yarn.lock* pnpm-lock.yaml* ./
-RUN ls -la
 RUN \
-  if [ -f yarn.lock ]; then echo "Using yarn" && yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then echo "Using npm" && npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then echo "Using pnpm" && corepack enable pnpm && pnpm i --frozen-lockfile; \
-  else echo "Error: No lockfile found (looking for yarn.lock, package-lock.json, or pnpm-lock.yaml)" && ls -la && exit 1; \
+  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+  elif [ -f package-lock.json ]; then npm ci; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i --frozen-lockfile; \
+  else echo "Lockfile not found." && exit 1; \
   fi
 
 
