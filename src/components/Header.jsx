@@ -192,7 +192,7 @@ export default function Header() {
                 <div className="navbar-container">
                     {/* Logo */}
                     <Link href="/" className="navbar-brand">
-                        LOGA
+                        Loga Tech
                     </Link>
 
                     {/* Desktop Navigation */}

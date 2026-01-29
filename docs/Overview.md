@@ -1,14 +1,14 @@
-# Logaa (LOGA) Overview
+# Loga Tech Overview
 
 > **Last Updated:** January 27, 2026
 
 ---
 
-## 🎯 What is Logaa?
+## 🎯 What is Loga Tech?
 
-**Logaa** (stylized as **LOGA**) is a **digital studio / web agency** that provides end-to-end digital solutions for businesses. The company positions itself as a comprehensive digital partner rather than just a service provider, handling everything from initial design concepts to ongoing maintenance and support.
+**Loga Tech** (From Code to Cloud) is a **digital studio / web agency** that provides end-to-end digital solutions for businesses. The company positions itself as a comprehensive digital partner rather than just a service provider, handling everything from initial design concepts to ongoing maintenance and support.
 
-**Website Contact:** info@logaa.website | +98 912 261 3278
+**Website Contact:** info@logatech.net | +98 912 261 3278
 
 ---
 

@@ -18,10 +18,10 @@ const playFairDisplay = Playfair_Display({
 
 export const metadata = {
     title: {
-        default: "Logaa",
-        template: "%s | Logaa",
+        default: "Loga Tech",
+        template: "%s | Loga Tech",
     },
-    description: "Logaa Smart Solutions",
+    description: "Loga Tech - From Code to Cloud",
 };
 
 // Script to prevent flash of wrong theme (runs before React hydration)

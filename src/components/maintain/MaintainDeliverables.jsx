@@ -21,7 +21,7 @@ const deliverables = [
     {
         icon: "🛡️",
         title: "Trust Badge",
-        description: "A 'Secured by Loga' seal to display on your site, building trust with your visitors.",
+        description: "A 'Secured by Loga Tech' seal to display on your site, building trust with your visitors.",
     },
 ];
 

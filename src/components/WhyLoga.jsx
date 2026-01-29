@@ -48,9 +48,9 @@ export default function WhyLoga() {
 
     return (
         <section id="why-us" className="section why-section">
-            <h2 className="section-title">Why Choose Loga?</h2>
+            <h2 className="section-title">Why Choose Loga Tech?</h2>
             <p className="section-subtitle">
-                More than a service provider — a true digital partner
+                From Code to Cloud — More than a service provider, a true digital partner
             </p>
             <div className="values-grid">
                 {values.map((value, index) => (

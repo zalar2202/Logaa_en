@@ -7,9 +7,9 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-brand">LOGA</div>
+                <div className="footer-brand">Loga Tech</div>
                 <div className="footer-tagline">Design · Develop · Deploy · Maintain</div>
-                <div className="copyright">© 2019-{currentYear} Loga. All Rights Reserved.</div>
+                <div className="copyright">© 2019-{currentYear} Loga Tech. All Rights Reserved.</div>
             </div>
         </footer>
     );

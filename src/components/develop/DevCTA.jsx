@@ -18,22 +18,22 @@ export default function DevCTA() {
                 </p>
                 <div className="cta-buttons">
                     <a
-                        href="mailto:info@logaa.website?subject=Development%20Project%20Inquiry"
+                        href="mailto:info@logatech.net?subject=Development%20Project%20Inquiry"
                         className="loga-btn large"
                     >
                         Book Technical Consult
                     </a>
                 </div>
                 <div className="cta-secondary">
-                    <a href="mailto:info@logaa.website" className="loga-alt-btn">
+                    <a href="mailto:info@logatech.net" className="loga-alt-btn">
                         Email Requirements
                     </a>
                 </div>
                 <div className="cta-contact-info">
                     <div className="contact-item">
                         <span className="contact-label">Email</span>
-                        <a href="mailto:info@logaa.website" className="contact-value">
-                            info@logaa.website
+                        <a href="mailto:info@logatech.net" className="contact-value">
+                            info@logatech.net
                         </a>
                     </div>
                     <div className="contact-item">

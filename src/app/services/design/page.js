@@ -13,7 +13,7 @@ import DesignFAQ from "@/components/design/DesignFAQ";
 import DesignCTA from "@/components/design/DesignCTA";
 
 export const metadata = {
-    title: "Design Services",
+    title: "Design Services | Loga Tech",
     description:
         "Strategic web design that elevates your brand, communicates your message, and converts visitors into customers. Beautiful, strategic, built for growth.",
 };

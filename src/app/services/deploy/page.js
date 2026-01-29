@@ -13,7 +13,7 @@ import DeployFAQ from "@/components/deploy/DeployFAQ";
 import DeployCTA from "@/components/deploy/DeployCTA";
 
 export const metadata = {
-    title: "Deployment Services | Loga",
+    title: "Deployment Services | Loga Tech",
     description:
         "Launch your web application with confidence. Enterprise-grade cloud infrastructure, CI/CD automation, and zero-downtime deployments.",
 };

@@ -11,7 +11,7 @@ export default function Hero() {
         <section className="hero" id="hero">
             <ParticleBackground />
             <div className="hero-content animate-fade-in">
-                <h1 className="hero-title">LOGA</h1>
+                <h1 className="hero-title">Loga Tech</h1>
                 <div className="hero-tagline">
                     <Link href="/services/design" className="animate-fade-in-up delay-100 hover-link">Design</Link>
                     <span className="hero-dot">·</span>
@@ -22,8 +22,8 @@ export default function Hero() {
                     <Link href="/services/maintain" className="animate-fade-in-up delay-400 hover-link">Maintain</Link>
                 </div>
                 <p className="hero-description animate-fade-in-up delay-500">
-                    Your end-to-end digital partner. We design, build, and grow your online presence
-                    — from the first pixel to ongoing success.
+                    From Code to Cloud — Your end-to-end digital partner. We design, build, and grow your online presence
+                    with expert care.
                 </p>
                 <div className="hero-cta animate-fade-in-up delay-600">
                     <a href="#contact" className="loga-btn">
